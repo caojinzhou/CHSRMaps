@@ -16,7 +16,7 @@ $(document).on('click', '.nodata', function() {
     var station_name = $("#search-form").val()
     $.post(host + '/crh/addNewStation', { 'station_name': station_name }, function(data) {
         if (data.code == 200) {
-            var tem = searchResultTemplate(data.result.train_name, data.result.station_id, data.result.longtitude, data.result.latitude)
+            var tem = searchResultTemplate(data.result.train_name, data.result.station_id, data.result.longtitude, data.result.latitude, data.train_address)
             $("#fright").append(tem)
         } else {
             alert(data.msg)
@@ -107,7 +107,9 @@ function writeData(station_name, station_id, la, lo) {
     $("#logs").append("线路: " + station_name + "\n")
     var crh_en_name = now_change_id()
     var points = $("#" + crh_en_name).attr("points")
-    $("#" + crh_en_name).attr("points", points + la + "," + lo + " ")
+    if (la != 0 && la != 'null') {
+        $("#" + crh_en_name).attr("points", points + la + "," + lo + " ")
+    }
     var scrollTop = $("#logs")[0].scrollHeight;
     $("#logs").scrollTop(scrollTop);
     saveDatas(station_id)
