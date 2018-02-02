@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#crh {
+    -webkit-transform: rotateX(180deg) !important;
+    -moz-transform: rotateX(180deg) !important;
+    -ms-transform: rotateX(180deg) !important;
+    -o-transform: rotateX(180deg) !important;
+    transform: rotateX(180deg) !important;
+}
+
+circle {
+    transition: all .2s ease-in;
+    position: relative;
+}
+
+circle:hover {
+    cursor: pointer;
+}
+
+#fix {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+
+#fright {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px #c1b34d;
+    display: none;
+}
+
+#fix div {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 20px #9c7d7d;
+    margin-bottom: 30px;
+}
+
+input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 0;
+}
+
+#end {
+    display: none;
+}
+
+#search {
+    display: none;
+}
+
+.finformation {
+    border-bottom: 1px solid #c1b34d;
+    padding-right: 20px;
+}
+
+.station_name {
+    width: 50px;
+}
+
+.station_id {
+    width: 20px;
+}
+
+.nodata {
+    color: #cc1515;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    display: block;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.new-branch,
+.finish-branch {
+    color: #ffffff;
+    background-color: #7a9cda;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    display: block;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.branch-form {
+    position: fixed;
+    top: 0;
+    left: 300px;
+    padding: 30px;
+    z-index: 999 !important;
+    background-color: #fff;
+}

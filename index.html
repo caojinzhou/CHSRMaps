@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRH TRAIN</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div id="fix">
+        <div id="search">
+            <input type="text" id="search-form" placeholder="搜索车站名称" value="">
+            <button id="search-start">search</button>
+        </div>
+
+        <div id="information">
+            <input type="text" id="station" placeholder="选择的车站名" value="" readonly>
+            <input type="text" id="station_id" value="" placeholder="车站id" readonly>
+        </div>
+
+        <div class="branch-form">
+            <button class="new-branch">新分支</button>
+            <button class="finish-branch">此分支完成</button>
+        </div>
+
+        <div id="status">
+            车站信息：<input type="text" value="" placeholder="请输入线路名称" id="crh_name"> 车站拼音：
+            <input type="text" value="" placeholder="请输入线路拼音名称" id="crh_en_name">
+            <a href="http://www.bootcss.com/p/websafecolors/" target="_blank">显示颜色:</a><input type="text" value="" placeholder="请输入颜色" id="crh_color">
+            <button id="start">start</button>
+            <button id="end">end</button>
+            <input type="hidden" id="checkStart" value="0">
+            <input type="hidden" id="temEnd" value="1">
+            <input type="hidden" id="saveBeforeBranch" value="">
+            <input type="hidden" id="saveBranchData" value="">
+            <input type="hidden" id="orginal_svg_path" value="">
+            <input type="hidden" id="now_alter_id" value="">
+            <input type="hidden" id="train_weight" value="">
+            <input type="hidden" id="train_color" value="">
+            <textarea name="" id="logs" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    <div id="fright">
+    </div>
+    <div id="crh">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="8992.44262" height="7992.44262"></svg>
+    </div>
+    <script src="/js/d3.v4.min.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
