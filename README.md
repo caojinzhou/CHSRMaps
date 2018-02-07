@@ -1,7 +1,13 @@
 # China High Speed Railway Maps
 
 ## changelog
-- 2018年2月5日23:17分，八纵八横中已经开通运营的铁路数据录入完毕，近期将开放相关页面
+
+- 14:26 7-2-2018，上传截图
+- 23:17 5-2-2018，八纵八横中已经开通运营的铁路数据录入完毕，近期将开放相关页面
+
+## screenshot
+
+<img src="https://github.com/zmisgod/CHSRMaps/blob/master/screencapture_crh_map.png">
 
 ## 八纵八横
 
